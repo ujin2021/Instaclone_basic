@@ -1,0 +1,22 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// .env 파일의 database와 연결해준다
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// 여기에 model을 설정하면 Prisma Migrate는 설명을 db에 적용해준다
+model Movie {
+  id Int @id @default(autoincrement()) 
+  title String 
+  year Int
+  genre String?
+  createAt DateTime @default(now())
+  updateAt DateTime @updatedAt
+}
