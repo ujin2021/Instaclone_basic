@@ -2,7 +2,7 @@
 Instaclone Backend build with Prisma and GraphQL
 
 ### apollo-server
-> https://github.com/apollographql/apollo-server
+> https://github.com/apollographql/apollo-server <br>
 > graphql 참고 : https://tech.kakao.com/2019/08/01/graphql-basic/
 ### babel
 > https://babeljs.io/setup#installation
@@ -23,3 +23,6 @@ Instaclone Backend build with Prisma and GraphQL
 * 우리의 db와 소통해준다
 * ? : 필수요소가 아닌것
 * schema.prisma에 model을 정의하고 prisma migrate를 해주면 db에 table생성됨
+
+### 이외의 수업내용
+https://ujin-dev.tistory.com/34
